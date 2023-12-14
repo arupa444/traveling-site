@@ -1,0 +1,438 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+    max-width: 100%;
+}
+body
+{
+    min-height: 100vh;/*viewport height*/
+    background: linear-gradient(rgb(48, 42, 94),rgb(255, 255, 255));/* we can use it for further updates in the style*/
+}
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 15000;
+    background: black;
+    /* background-image: url(image/ff.jpg); */
+}
+header .logoNam{
+    position: relative;
+    font-family: copperplate,fantasy;
+    padding: 20px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.9em;
+    letter-spacing: 2px;
+}
+.redies{
+    font-family: cursive;
+    color: rgb(230, 8, 8);
+}
+.logoName{
+    font-family: copperplate,fantasy;
+    color: rgb(230, 8, 8);
+}
+header ul{
+    display: flex;
+}
+.logoCZ{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+header ul li{
+    list-style: none;
+    margin-left: 22px;
+}
+header ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.home{
+    background:rgb(255, 255, 255);
+    color: rgb(45, 89, 165);
+}
+main{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 0;
+    padding-top: 44px;
+    flex-direction: column;
+}
+.fixedHeader{
+    position:sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:linear-gradient(rgb(100, 97, 97),rgb(0, 0, 0));
+    z-index: 10;
+    align-items: center;
+}
+.fixedHeader ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fixedHeader ul li{
+    list-style: none;
+    margin-left: 40px;
+    margin-right: 20px;
+
+}
+.fixedHeader ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.fixedHeader .secondUl li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fixedHeader ul li a.signIn{
+    margin-left: 140px;
+}
+.fixedHeader .logo{
+    font-family: copperplate,fantasy;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    padding-left: 30px;
+}
+.fixedHeader .logoName{
+    padding-left: 30px;
+}
+.fixedHeader ul li a:hover,
+.fixedHeader ul li a.home{
+    background: linear-gradient(rgb(0, 0, 0),red);
+    color: black;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 20px;
+    padding-left: 40px;
+    /* background: black; */
+    background-image: url(image/backFooter.jpeg);
+    justify-content: space-between;
+    color: white;
+}
+footer .socialIcon{
+    display: flex;
+    flex-direction: column;
+}
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.fontfooter1{
+    font-family: copperplate,fantasy;
+    font-size: 1.2em;
+}
+.fontfooter2{
+    font-family: cursive;
+    font-size: 1.2em;
+}
+.sizze{
+    font-family: copperplate,fantasy;
+    font-size: .9em;
+}
+footer i{
+    padding: 3px;
+}
+footer .socialIcon a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    background-color: black;
+    color: white;
+}
+.fixedHeader ul li form select{
+    appearance: none;
+    text-decoration: none;
+    background: transparent;
+    color:white;
+    font-size: 16px;
+    box-shadow: none;
+    outline: 0;
+    background-image: none;
+    border: 0;
+}
+footer .copyright{
+    padding-top: 20px;
+}
+footer .copyright .footerBrandName{
+    display: flex;
+}
+
+footer .copyright .footerBrandName1{
+    display: flex;
+}
+.transperentBack{
+    position: fixed;
+    z-index: 200000;
+    bottom: 14%;
+    left: 0%;
+}
+.bluey{
+    color: rgb(185, 22, 22);
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 5px;
+}
+.blackWhite{
+    background-color: black;
+    color: white;
+}
+/* .offer1{
+    position: relative;
+    display: flex;
+    font-family: copperplate,fantasy;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    padding: 5px;
+    font-size: 3em;
+    color: gray;
+} */
+main .main1{
+    display: flex;
+    justify-content: space-around;
+}
+main .main1 a:hover{
+    transform: translateY(10px);
+}
+main .main1 a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+}
+main .main1 .main1_img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.paddingOffBars{
+    padding-left: 40%;
+}
+@keyframes aniTagl1 {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-2000px);
+    }
+}
+@keyframes aniTagl2 {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-2000px);
+    }
+}
+@keyframes aniTagl3 {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-2000px);
+    }
+}
+main .mainTag .firstTagLine {
+    display: flex;
+    justify-content: end;
+    animation-name: aniTagl1;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    transform: translateX(-2000px);
+}
+main .mainTag .secondTagLine {
+    display: flex;
+    justify-content: end;
+    animation-name: aniTagl2;
+    animation-duration: 7s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    transform: translateX(-2000px);
+}
+main .mainTag .thirdTagLine {
+    display: flex;
+    justify-content: end;
+    animation-name: aniTagl3;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    transform: translateX(-2000px);
+}
+.redTagLine1{
+    font-family: copperplate,fantasy;
+    color: rgb(230, 8, 8);
+}
+.tagLine{
+    font-family: copperplate,fantasy;
+    color: rgb(255, 255, 255);
+}
+main .mainTag .upTheTag{
+    display: flex;
+    flex-direction: column;
+}
+main .mainTag .upTheTag .upTheTagDesign{
+    display: flex;
+    justify-content: space-around;
+}
+main .mainTag .upTheTag a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+main .mainTag .upTheTag a:hover{
+    transform: translateY(-10px);
+}
+main .mainTag .upTheTag p{
+    padding: 0px;
+    margin: 0px;
+}
+main .mainTag .upTheTag .upTheTagPics {
+    width: 200px;
+    height: 200px;
+}
+main .mainTag .upTheTag .upTheTagDesign .mid_lineForDis{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+main .mainTag .upTheTag h3{
+    padding: 20px 0px;
+    font-family: cursive;
+}
+main .aboutUsHome{
+    padding: 70px;
+}
+@media screen and (max-width:414px){
+    header{
+        display: block;
+        padding: 0;
+    }
+    header .logoNam{
+        padding: 0;
+    }
+    header ul li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 7px 5px;
+        border-radius: 20px;
+        font-size: 0.8em;
+    }
+    header ul li{
+        list-style: none;
+        margin-left: 15px;
+    }
+    main .main1 .main1_img{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    main .main1 .main1Text{
+        font-size: 0.7em;
+    }
+    main .mainTag .upTheTag .upTheTagDesign{
+        display: block;
+    }
+    main .aboutUsHome{
+        padding: 10px;
+    }
+    main .aboutUsHome h5{
+        font-size: 1em;
+    }
+    main .aboutUsHome h6{
+        font-size: 1em;
+    }
+    footer{
+        padding: 5px;
+    }
+    footer{
+        display: flex;
+    }
+    footer .socialIcon{
+        font-size: 0.7em;
+    }
+    footer .copyright{
+        padding-top: 20px;
+        font-size: 0.5em;
+    }
+    .fixedHeader{
+        display: flex;
+        flex-direction: column;
+    }
+    .fixedHeader ul li a.signIn{
+        margin-left: 0px;
+    }
+    .fixedHeader ul li a{
+        padding: 4px 7px;
+    }
+    .fixedHeader .secondUl li{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .fixedHeader ul li{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .fixedHeader ul{
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+    .fixedHeader .fixedHeaderBrandName{
+        font-size: 0.8em;
+    }
+    main{
+        padding-top: 20px;
+    }
+}

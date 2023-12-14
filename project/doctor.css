@@ -1,0 +1,55 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+}
+body
+{
+    min-height: 100vh;/*viewport height*/
+    background: linear-gradient(rgb(48, 42, 94),rgb(255, 255, 255));/* we can use it for further updates in the style*/
+    width: 100%;
+    height: 100%;
+}
+.docImage{
+    position: absolute;
+    z-index: -1px;
+}
+.writeenText{
+    z-index: 20px;
+    position: absolute;
+    color: black;
+    top: 200px;
+    left:100px;
+    width: 500px;
+    height: auto;
+}
+.doctImage{
+    opacity: 40%;
+}
+.appointBox{
+    position: relative;
+    top: 140px;
+    left: 840px;
+    border: 1px solid transparent;
+    background-color: rgb(241, 231, 219);
+    width: 450px;
+    z-index: 200000;
+}
+.form-data{
+    padding: 10px;
+}
+.form-row{
+    padding: 10px;
+}
+.radio-app{
+    padding-left: 10px;
+}
+.appHead{
+    font-size: 20px;
+    font-weight: 500px;
+    padding: 5px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
