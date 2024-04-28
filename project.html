@@ -157,25 +157,25 @@
                         </div>
                         <div class="upTheTagDesign">
                             <div>
-                                <a href="#" class=""><img src="image/villa.jpeg" class="upTheTagPics" alt="..."><p>Villas</p><p>19,400</p></a>
+                                <a href="#" class=""><img src="image/villa.jpeg" class="upTheTagPics" alt="..."><p>Villas</p><p id="rand1">19,400</p></a>
                             </div>
                             <div class="mid_lineForDis">
                                 <p>___________</p>
                             </div>
                             <div>
-                                <a href="#" class=""><img src="image/glamping.jpeg" class="upTheTagPics" alt="..."><p>Glampings</p><p>44,961</p></a>
+                                <a href="#" class=""><img src="image/glamping.jpeg" class="upTheTagPics" alt="..."><p>Glampings</p><p id="rand2">44,961</p></a>
                             </div>
                             <div class="mid_lineForDis">
                                 <p>___________</p>
                             </div>
                             <div>
-                                <a href="#" class=""><img src="image/serviceApartment.jpeg" class="upTheTagPics" alt="..."><p>Serviced Apartments</p><p>21,440</p></a>
+                                <a href="#" class=""><img src="image/serviceApartment.jpeg" class="upTheTagPics" alt="..."><p>Serviced Apartments</p><p id="rand3">21,440</p></a>
                             </div>
                             <div class="mid_lineForDis">
                                 <p>___________</p>
                             </div>
                             <div>
-                                <a href="#" class=""><img src="image/motel.jpeg" class="upTheTagPics" alt="..."><p>Motels</p><p>41,646</p></a>
+                                <a href="#" class=""><img src="image/motel.jpeg" class="upTheTagPics" alt="..."><p>Motels</p><p id="rand4">41,646</p></a>
                             </div>
                         </div>
                     </div>
@@ -227,5 +227,20 @@
             <section class="copyRightCountry"><P><br>Country<b>INDIA</b></P></section></div>
         </div>
     </footer>
+
+    <script>
+        function looop(x,y){
+            let a,n=30000;
+            for(a=0;a<=n;a++){
+                setTimeout(() =>{
+                    document.getElementById(x).innerHTML=Math.floor(Math.random()*100000);
+                },a*y)
+            }
+        }
+        looop("rand1",.05);
+        looop("rand2",.09);
+        looop("rand3",.13);
+        looop("rand4",.17);
+    </script>
 </body>
 </html>
